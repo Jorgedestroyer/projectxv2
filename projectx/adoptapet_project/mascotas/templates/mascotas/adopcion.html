@@ -67,7 +67,7 @@
 <!-- Modal de Adopción -->
 <div class="modal fade" id="adoptModal" tabindex="-1" aria-labelledby="adoptModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
-    <form method="POST" action="{% url 'adoptar_modal' %}">
+  <form method="POST" action="{% url 'adoptar' %}">
       {% csrf_token %}
       <input type="hidden" name="mascota_id" id="modalMascotaId">
       <div class="modal-content rounded-4 shadow">
